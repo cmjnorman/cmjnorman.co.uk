@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #1b262cff;
+    height: 500px;
+}
+
+p {
+    font-size: 1vw;
+}
+
+h1 {
+    font-size: 8vw;
+}
+
+h2 {
+    font-size: 4vw;
+}
+
+h3 {
+    font-size: 2vw;
+}
+
+img {
+    height: 500px;
+    border-radius: 50%;
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background-image: url("assets/oceanic-background-image.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left-margin {
+    margin-left: 5vw;
+}
+
+.vertical-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.title {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.about {
+    margin: 100px 5vw;
+    display: flex;
+}
+
