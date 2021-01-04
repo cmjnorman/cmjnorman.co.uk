@@ -17,7 +17,6 @@
 
 body {
     background-color: var(--bg-colour);
-    height: 500px;
     overflow-x: hidden;
 }
 
@@ -33,17 +32,25 @@ h2 {
     font-size: 40px;
 }
 
-img {
+h3 {
+    font-size: 30px;
+}
+
+.portrait {
     max-width: 100%;
     height: auto;
     border-radius: 50%;
     align-self: center;
 }
 
-.content-card {
+.content {
     margin: 70px;
+}
+
+.card {
     background-color: var(--surface-colour);
     border-radius: 20px;
+    margin: 5px;
 }
 
 .header {
@@ -61,16 +68,19 @@ img {
     transform: translateY(-50%);
 }
 
-.title {
+.main-title {
     position: absolute;
     top: 40%;
     transform: translateY(-50%);
     margin-left: 70px;
 }
 
+.section-title {
+    margin: 100px 5px 10px 5px;
+}
+
 .flex-container {
     display: flex;
-    margin: 100px 0px;
 }
 
 .flex-img {
@@ -83,12 +93,20 @@ img {
     padding: 30px;
 }
 
+.flex-card {
+    flex: 50%;
+    padding: 30px;
+}
+
 @media screen and (max-width: 900px) {
     h1 {
         font-size: 50px;
     }
     h2 {
         font-size: 30px;
+    }
+    h3 {
+        font-size: 25px;
     }
     .flex-container {   
       flex-direction: column;
@@ -97,10 +115,10 @@ img {
         top: 0%;
         transform: none;
     }
-    .title {
+    .main-title {
         margin-left: 50px;
     }
-    .content-card{
+    .content {
         margin: 50px;
     }
   }
