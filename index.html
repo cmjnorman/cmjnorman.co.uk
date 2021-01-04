@@ -16,7 +16,7 @@
         </div>
         <div class="content">
             <div class="card">
-                <div class="flex-container">
+                <div class="flex-container-responsive">
                     <img class="portrait flex-img" src="assets/chris.png" alt="A picture of me" style="width: 400px;">
                     <div class="flex-txt">
                         <div class="vertical-center">
@@ -32,19 +32,39 @@
             <div class="section-title">
                 <h2>Projects</h2>
             </div>
-            <div class="flex-container">
-                <div class="flex-card card">
+            <div class="flex-container-responsive">
+                <div class="flex-card card vertical-flex-container">
                     <img class="project-img" src="assets/octoplayer.png" alt="Octoplayer Logo" style="width: 100%;"/>
                     <h3>Octoplayer</h3>
                     <p class="project-description">A dark theme fullscreen music player for browsing and playing tracks from an offline music library. The player features sophisticated browser navigation and playing queue controls, presented by an elegant and intuitive User Interface. </p>
-                    <a href="https://github.com/cmjnorman/Octoplayer">View On Github</a>
+                    <a class="button-link" href="https://github.com/cmjnorman/Octoplayer">View On Github</a>
                 </div> 
-                <div class="flex-card card">
+                <div class="flex-card card vertical-flex-container">
                     <img class="project-img" src="assets/sparta-profile-viewer.png" alt="Octoplayer Logo" style="width: 100%;"/>
                     <h3>Sparta Global Profile Viewer</h3>
                     <p class="project-description">An online portal system created with my training team at Sparta Global for our final project. The portal allows current Sparta trainees and consultants to log into their personal account to create, view, and update their personal profiles, and allows prospective Sparta clients to log in to a temporary client account in order to browse through a selection of profiles.</p>
-                    <a href="https://gist.github.com/cmjnorman/a5fce78eb1701adc322d73dedddbffa8">View On Github</a>
+                    <a class="button-link" href="https://gist.github.com/cmjnorman/a5fce78eb1701adc322d73dedddbffa8">View On Github</a>
                 </div> 
+            </div>
+        </div>
+        <div class="content">
+            <h2>Contact</h2>
+            <div class="card horizontal-content-center">
+                <p>Contact me via email or phone:</p>
+                <div class="horizontal-flex-container">
+                    <img class="email-icon" src="assets/email-icon.png">
+                    <a href="mailto:cmjnorman@gmail.com">cmjnorman@gmail.com</a>
+                    <div class="flex-spacer"></div>
+                    <img class="phone-icon" src="assets/phone-icon.png">
+                    <p class="no-wrap">+44(0)-7939-482672</p>
+                </div>
+                <p>Or via the following form:</p>
+                <form action="https://formspree.io/f/mleoaeeo" method="POST">
+                    <input type="text" name="name" placeholder="Name...">
+                    <input type="text" name="email" placeholder="Email...">
+                    <textarea name="message" placeholder="Enter Message..."></textarea>
+                    <button type="submit">Send</button>
+                </form>
             </div>
         </div>
     </body>

@@ -21,7 +21,7 @@ body {
 }
 
 p {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 h1 {
@@ -37,20 +37,21 @@ h3 {
 }
 
 a {
-    background-color: var(--highlight-colour);
-    border-radius: 15px;
-    font-size: 20px;
-    text-decoration: none;
-    padding: 10px 20px;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    font-size: 24px;
 }
 
-a:hover {
-    bottom: 8px;
-    padding: 12px 22px;
+.button-link {
+    background-color: var(--highlight-colour);
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 5px 20px;
+    align-self: center;
+    margin: auto 0 20px 0;
+}
+
+.button-link:hover {
+    padding: 7px 22px;
+    margin: auto 0 16px 0;
 }
 
 .portrait {
@@ -71,13 +72,14 @@ a:hover {
 }
 
 .content {
-    margin: 0px 70px;
+    margin: 0px 400px;
 }
 
 .card {
     background-color: var(--surface-colour);
     border-radius: 15px;
     margin: 5px;
+    padding: 10px;
     position: relative;
 }
 
@@ -94,6 +96,7 @@ a:hover {
     width: 400px;
     position: relative;
     left: 90%;
+    margin: 0px 0px -70px 0px;
     transform: translateX(-100%);
 }
 
@@ -103,19 +106,36 @@ a:hover {
     transform: translateY(-50%);
 }
 
+.horizontal-content-center {
+    text-align: center
+}
+
 .main-title {
     position: absolute;
     top: 40%;
     transform: translateY(-50%);
-    margin-left: 70px;
+    margin-left: 400px;
 }
 
 .section-title {
     margin: 0px 5px 10px 5px;
 }
 
-.flex-container {
+.flex-container-responsive {
     display: flex;
+}
+
+.horizontal-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical-flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .flex-img {
@@ -133,7 +153,55 @@ a:hover {
     padding: 30px;
 }
 
-@media screen and (max-width: 900px) {
+.flex-spacer {
+    width: 100%;
+    max-width: 40px;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+.email-icon {
+    width: 35px; 
+    height: 35px;
+    margin: 0 10px;
+}
+
+.phone-icon {
+    width: 23.8px; 
+    height: 35px;
+    margin: 0 10px;
+}
+
+input, textarea {
+    background-color: transparent;
+    border: 1px solid var(--shadow-colour);
+    border-radius: 15px;
+    font-size: 20px;
+    display: block;
+    margin: 5px auto;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 500px;
+}
+button {
+    font-size: 24px;
+    background-color: var(--highlight-colour);
+    border-radius: 15px;
+    padding: 5px 20px;
+    margin: 10px 0;
+}
+
+
+button:hover {
+    padding: 7px 22px;
+    margin: 8px 0;
+}
+
+ 
+
+@media screen and (max-width: 1200px) {
     h1 {
         font-size: 50px;
     }
@@ -143,7 +211,7 @@ a:hover {
     h3 {
         font-size: 25px;
     }
-    .flex-container {   
+    .flex-container-responsive {   
       flex-direction: column;
     }
     .vertical-center {
