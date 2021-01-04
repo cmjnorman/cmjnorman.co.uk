@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
     outline: none;
     font-family: 'Oswald', sans-serif;
     color: white;
@@ -10,27 +11,30 @@
 body {
     background-color: #1b262cff;
     height: 500px;
+    overflow-x: hidden;
 }
 
 p {
-    font-size: 1vw;
+    font-size: 20px;
 }
 
 h1 {
-    font-size: 8vw;
+    font-size: 90px;
 }
 
 h2 {
-    font-size: 4vw;
-}
-
-h3 {
-    font-size: 2vw;
+    font-size: 40px;
 }
 
 img {
-    height: 500px;
+    max-width: 100%;
+    height: auto;
     border-radius: 50%;
+    align-self: center;
+}
+
+.content {
+    margin-left: 70px;
 }
 
 .header {
@@ -40,10 +44,6 @@ img {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.left-margin {
-    margin-left: 5vw;
 }
 
 .vertical-center {
@@ -58,8 +58,36 @@ img {
     transform: translateY(-50%);
 }
 
-.about {
-    margin: 100px 5vw;
+.flex-container {
     display: flex;
+    margin: 100px 0px;
 }
 
+.flex-img {
+    flex: 30%;
+    padding: 30px;
+}
+
+.flex-txt {
+    flex: 70%;
+    padding: 30px;
+}
+
+@media screen and (max-width: 900px) {
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .flex-container {   
+      flex-direction: column;
+    }
+    .vertical-center {
+        top: 0%;
+        transform: none;
+    }
+    .content{
+        margin-left: 50px;
+    }
+  }
