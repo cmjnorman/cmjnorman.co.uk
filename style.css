@@ -1,7 +1,7 @@
 :root {
     --bg-colour:  #1b262cff;
     --surface-colour: #23343dff;
-    --highlight-colour: #0f4c75ff;
+    --highlight-colour: #3282b8ff;
     --shadow-colour: #323c41ff;
   }
 
@@ -71,7 +71,7 @@ a:hover {
 }
 
 .content {
-    margin: 70px;
+    margin: 0px 70px;
 }
 
 .card {
@@ -90,6 +90,13 @@ a:hover {
     background-size: cover;
 }
 
+.background-squid {
+    width: 400px;
+    position: relative;
+    left: 90%;
+    transform: translateX(-100%);
+}
+
 .vertical-center {
     position: relative;
     top: 50%;
@@ -104,7 +111,7 @@ a:hover {
 }
 
 .section-title {
-    margin: 100px 5px 10px 5px;
+    margin: 0px 5px 10px 5px;
 }
 
 .flex-container {
