@@ -153,24 +153,58 @@ h3 {
     margin: 0 20px;
 }
 
-.vertical-content {
+.vertical-flex {
+    margin: 0 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}
-
-.flex-txt {
-    flex: 70%;
-    padding: 30px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .flex-card {
     flex: 50%;
     padding: 30px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .no-wrap {
     white-space: nowrap;
+}
+
+.scroll-icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    left: calc(50% - 25px);
+    animation: bounce 2s ease 2s infinite normal; 
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+    30% {
+        transform: translateY(0px);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+    70% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 .email-icon {
@@ -213,14 +247,13 @@ button {
     background-color: var(--highlight-colour);
     border-radius: 15px;
     padding: 5px 20px;
-    margin: 10px 0;
+    margin: 10px 5px;
     cursor: pointer;
 }
 
-
 button:hover {
     padding: 7px 22px;
-    margin: 8px 0;
+    margin: 8px 3px;
 }
 
 @media screen and (max-width: 1300px) {
