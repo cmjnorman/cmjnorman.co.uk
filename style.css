@@ -5,6 +5,10 @@
     --shadow-colour: #323c41ff;
   }
 
+  html {
+      scroll-behavior: smooth;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -180,7 +184,8 @@ h3 {
     height: 50px;
     bottom: 20px;
     left: calc(50% - 25px);
-    animation: bounce 2s ease 2s infinite normal; 
+    animation: bounce 2s ease 0s infinite normal; 
+    cursor: pointer;
 }
 
 @keyframes bounce {

@@ -15,19 +15,19 @@
                     <h1>Chris Norman</h1>
                     <h2>Software Developer</h2>
                 </div>
-                <img class="scroll-icon" src="assets/scroll-arrow-icon.png">
+                <img class="scroll-icon" onclick="goToAbout()" src="assets/scroll-arrow-icon.png">
             </div>
         </div>
         <div class="content">
-            <div class="card">
+            <div class="card" id="about">
                 <div class="flex-container-responsive">
                     <img class="portrait" src="assets/chris.png" alt="A picture of me">
                     <div class="vertical-flex">
                         <h2>About me</h2>
                         <p>My name is Chris Norman, and I am an aspiring software developer living in the south-east UK. I have a passion for technology with a desire to learn and to grow my programming skillset. My background in physics provides me with strong analytical skills and a creative, yet logical approach to problem-solving, enabling me to overcome any challenges I am faced with. I possess solid teamwork and communication skills picked up throughout my degree and during my extensive customer service experience, enabling me to work efficiently with colleagues and clients alike. I am extremely excited to begin my career in software and to continue to improve my technical skills alongside an organisation that will help guide me and facilitate my growth as a developer.</p>
                         <div class="horizontal-content">
-                            <button>Check Out My Work</button>
-                            <button>Get In Touch</button>
+                            <button onclick="goToProjects()">Check Out My Work</button>
+                            <button onclick="goToContact()">Get In Touch</button>
                             <button>View my CV</button>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
             <div class="section-title">
                 <h2>Projects</h2>
             </div>
-            <div class="flex-container-responsive">
+            <div class="flex-container-responsive" id="projects">
                 <div class="flex-card card vertical-content">
                     <img class="project-img" src="assets/octoplayer.png" alt="Octoplayer Logo" style="width: 100%;"/>
                     <h3>Octoplayer</h3>
@@ -57,7 +57,7 @@
         <img src="assets/squid-background.png" class="background-lhs">
         <div class="content">
             <h2 class="section-title">Contact</h2>
-            <div class="card horizontal-content-center">
+            <div class="card horizontal-content-center" id="contact">
                 <p>Contact me via email or phone:</p>
                 <div class="flex-container-contacts">
                     <div class="horizontal-content">
@@ -80,7 +80,8 @@
         </div>
         <div class="footer">
             <a class="github-link" href="https://github.com/cmjnorman/portfolio-website">Check out the GitHub repository for this site!</a>
-            <button class="btn-back-to-top">Back To Top</button>
+            <button onclick="goToTop()" class="btn-back-to-top">Back To Top</button>
         </footer>
     </body>
+    <script src="script.js"></script>
 </html>
