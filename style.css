@@ -12,16 +12,13 @@
     box-sizing: border-box;
     outline: none;
     font-family: 'Oswald', sans-serif;
+    font-size: 20px;
     color: white;
 }
 
 body {
     background-color: var(--bg-colour);
     overflow-x: hidden;
-}
-
-p {
-    font-size: 24px;
 }
 
 h1 {
@@ -34,10 +31,6 @@ h2 {
 
 h3 {
     font-size: 30px;
-}
-
-a {
-    font-size: 24px;
 }
 
 .button-link {
@@ -56,9 +49,11 @@ a {
 
 .portrait {
     max-width: 100%;
+    width: calc(33% + 60px);
     height: auto;
     border-radius: 50%;
     align-self: center;
+    padding: 30px;
 }
 
 .project-description {
@@ -72,7 +67,9 @@ a {
 }
 
 .content {
-    margin: 0px 400px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .card {
@@ -87,7 +84,7 @@ a {
     height: 100vh;
     width: 100%;
     background-image: url("assets/oceanic-background-image.png");
-    background-position: center center;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -96,8 +93,9 @@ a {
     width: 400px;
     position: relative;
     left: 90%;
-    margin: 0px 0px -70px 0px;
+    margin: 0px 0px -60px 0px;
     transform: translateX(-100%);
+    z-index: -1;
 }
 
 .vertical-center {
@@ -114,7 +112,6 @@ a {
     position: absolute;
     top: 40%;
     transform: translateY(-50%);
-    margin-left: 400px;
 }
 
 .section-title {
@@ -125,22 +122,25 @@ a {
     display: flex;
 }
 
-.horizontal-flex-container {
+.flex-container-contacts {   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.horizontal-content {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: 0 20px;
 }
 
-.vertical-flex-container {
+.vertical-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.flex-img {
-    flex: 30%;
-    padding: 30px;
 }
 
 .flex-txt {
@@ -178,7 +178,6 @@ input, textarea {
     background-color: transparent;
     border: 1px solid var(--shadow-colour);
     border-radius: 15px;
-    font-size: 20px;
     display: block;
     margin: 5px auto;
     padding: 0 15px;
@@ -186,7 +185,6 @@ input, textarea {
     max-width: 500px;
 }
 button {
-    font-size: 24px;
     background-color: var(--highlight-colour);
     border-radius: 15px;
     padding: 5px 20px;
@@ -199,17 +197,25 @@ button:hover {
     margin: 8px 0;
 }
 
- 
+@media screen and (max-width: 1300px) {
+    .content {
+        margin: 0 50px;
+        width: calc(100% - 100px);
+    }
+}
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 840px) {
     h1 {
-        font-size: 50px;
+        font-size: 70px;
     }
     h2 {
         font-size: 30px;
     }
     h3 {
         font-size: 25px;
+    }
+    .portrait {
+        width: 80%;
     }
     .flex-container-responsive {   
       flex-direction: column;
@@ -218,10 +224,23 @@ button:hover {
         top: 0%;
         transform: none;
     }
-    .main-title {
-        margin-left: 50px;
+    .background-squid {
+        width: 300px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    h1 {
+        font-size: 60px;
+    }
+    h2 {
+        font-size: 25px;
     }
     .content {
-        margin: 50px;
+        margin: 0 20px;
+        width: calc(100% - 40px);
+    }
+    .background-squid {
+        width: 200px;
     }
   }
