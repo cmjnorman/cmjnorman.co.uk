@@ -83,18 +83,33 @@ h3 {
 .header {
     height: 100vh;
     width: 100%;
-    background-image: url("assets/oceanic-background-image.png");
+    background-image: url("assets/header-background.png");
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.background-squid {
+.footer {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url("assets/footer-background.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-lhs {
     width: 400px;
     position: relative;
-    left: 90%;
-    margin: 0px 0px -60px 0px;
-    transform: translateX(-100%);
+    left: calc(10%);
+    z-index: -1;
+}
+
+.background-rhs {
+    width: 400px;
+    position: relative;
+    left: calc(90% - 400px);
     z-index: -1;
 }
 
@@ -115,7 +130,8 @@ h3 {
 }
 
 .section-title {
-    margin: 0px 5px 10px 5px;
+    margin: 0 0 20px 0;
+    text-align: center;
 }
 
 .flex-container-responsive {
@@ -153,11 +169,6 @@ h3 {
     padding: 30px;
 }
 
-.flex-spacer {
-    width: 100%;
-    max-width: 40px;
-}
-
 .no-wrap {
     white-space: nowrap;
 }
@@ -172,6 +183,20 @@ h3 {
     width: 23.8px; 
     height: 35px;
     margin: 0 10px;
+}
+
+.btn-back-to-top {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.github-link {
+    position: absolute;
+    font-size: 15px;
+    bottom: 10px;
+    left: 20px;
 }
 
 input, textarea {
@@ -189,6 +214,7 @@ button {
     border-radius: 15px;
     padding: 5px 20px;
     margin: 10px 0;
+    cursor: pointer;
 }
 
 
@@ -224,7 +250,11 @@ button:hover {
         top: 0%;
         transform: none;
     }
-    .background-squid {
+    .background-rhs {
+        width: 300px;
+        left: calc(90% - 300px);
+    }
+    .background-lhs {
         width: 300px;
     }
   }
@@ -240,7 +270,11 @@ button:hover {
         margin: 0 20px;
         width: calc(100% - 40px);
     }
-    .background-squid {
+    .background-rhs {
+        width: 200px;
+        left: calc(90% - 200px);
+    }
+    .background-lhs {
         width: 200px;
     }
   }

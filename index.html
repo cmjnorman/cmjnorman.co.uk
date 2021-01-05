@@ -30,7 +30,7 @@
                 </div>
             </div>
         </div>
-        <img src="assets/squid-background.png" class="background-squid">
+        <img src="assets/fish-background.png" class="background-rhs">
         <div class="content">
             <div class="section-title">
                 <h2>Projects</h2>
@@ -50,8 +50,9 @@
                 </div> 
             </div>
         </div>
+        <img src="assets/squid-background.png" class="background-lhs">
         <div class="content">
-            <h2>Contact</h2>
+            <h2 class="section-title">Contact</h2>
             <div class="card horizontal-content-center">
                 <p>Contact me via email or phone:</p>
                 <div class="flex-container-contacts">
@@ -66,12 +67,16 @@
                 </div>
                 <p>Or via the following form:</p>
                 <form action="https://formspree.io/f/mleoaeeo" method="POST">
-                    <input type="text" name="name" placeholder="Name...">
-                    <input type="text" name="email" placeholder="Email...">
-                    <textarea name="message" placeholder="Enter Message..."></textarea>
+                    <input type="text" name="name" required placeholder="Name...">
+                    <input type="email" name="email" required placeholder="Email...">
+                    <textarea name="message" required placeholder="Enter Message..."></textarea>
                     <button type="submit">Send</button>
                 </form>
             </div>
         </div>
+        <div class="footer">
+            <a class="github-link" href="https://github.com/cmjnorman/portfolio-website">Check out the GitHub repository for this site!</a>
+            <button class="btn-back-to-top">Back To Top</button>
+        </footer>
     </body>
 </html>
