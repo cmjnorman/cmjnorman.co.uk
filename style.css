@@ -37,20 +37,6 @@ h3 {
     font-size: 30px;
 }
 
-.button-link {
-    background-color: var(--highlight-colour);
-    border-radius: 15px;
-    text-decoration: none;
-    padding: 5px 20px;
-    align-self: center;
-    margin: auto 0 20px 0;
-}
-
-.button-link:hover {
-    padding: 7px 22px;
-    margin: auto 0 16px 0;
-}
-
 .portrait {
     max-width: 100%;
     width: calc(33% + 60px);
@@ -149,10 +135,37 @@ h3 {
     justify-content: center;
 }
 
+.flex-container-icons {   
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: auto;
+    justify-content: center;
+}
+
+.tech-icon-container {
+    position: relative;
+}
+
+.tech-icon-container p {
+    font-size: 0px;
+    opacity: 0;
+    transition: 0.3s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tech-icon-container:hover p {
+    font-size: 15px;
+    opacity: 100%;
+    animation: fadeIn 
+}
+
 .horizontal-content {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin: 0 20px;
 }
@@ -176,6 +189,19 @@ h3 {
 
 .no-wrap {
     white-space: nowrap;
+}
+
+.button-link {
+    background-color: var(--highlight-colour);
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 5px 20px;
+    margin-left: auto;
+    align-self: center;
+}
+
+.button-link:hover {
+    padding: 7px 22px;
 }
 
 .scroll-icon {
@@ -210,6 +236,11 @@ h3 {
     100% {
         transform: translateY(0px);
     }
+}
+
+.tech-icon {
+    height: 46px;
+    margin: 0 5px;
 }
 
 .email-icon {
@@ -281,6 +312,10 @@ button:hover {
     .portrait {
         width: 80%;
     }
+    .flex-card {
+        margin: 20px;
+    }
+
     .flex-container-responsive {   
       flex-direction: column;
     }
