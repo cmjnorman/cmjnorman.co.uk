@@ -12,11 +12,7 @@ function goToAbout() {
 }
 
 function goToProjects() {
-    document.getElementById("projects").scrollIntoView({
-        behavior: "auto",
-        block: "center",
-        inline: "center"
-    });
+    document.getElementById("projects").scrollIntoView();
 }
 
 function goToContact() {

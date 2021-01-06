@@ -7,85 +7,103 @@
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <title>Chris Norman</title>
     </head>
-    
     <body>
         <div class="header">
-            <div class="content">
-                <div class="main-title">
-                    <h1>Chris Norman</h1>
-                    <h2>Software Developer</h2>
-                </div>
-                <img class="scroll-icon" onclick="goToAbout()" src="assets/scroll-arrow-icon.png">
-            </div>
+            <section class="header__title">
+                <h1>Chris Norman</h1>
+                <h2>Software Developer</h2>
+            </section>
+            <img class="header__scroll-icon" onclick="goToAbout()" src="assets/scroll-arrow-icon.png">
         </div>
-        <div class="content">
-            <div class="card" id="about">
-                <div class="flex-container-responsive">
-                    <img class="portrait" src="assets/chris.png" alt="A picture of me">
-                    <div class="vertical-flex">
-                        <h2>About me</h2>
-                        <p>My name is Chris Norman, and I am an aspiring software developer living in the south-east UK. I have a passion for technology with a desire to learn and to grow my programming skillset. My background in physics provides me with strong analytical skills and a creative, yet logical approach to problem-solving, enabling me to overcome any challenges I am faced with. I possess solid teamwork and communication skills picked up throughout my degree and during my extensive customer service experience, enabling me to work efficiently with colleagues and clients alike. I am extremely excited to begin my career in software and to continue to improve my technical skills alongside an organisation that will help guide me and facilitate my growth as a developer.</p>
-                        <div class="horizontal-content">
-                            <button onclick="goToProjects()">Check Out My Work</button>
-                            <button onclick="goToContact()">Get In Touch</button>
-                            <button>View my CV</button>
+        <section class="about-section" id="about">
+            <div class="about-section__main">
+                <img class="about-section__image" src="assets/chris.png" alt="A picture of me">
+                <div class="about-section__info">
+                    <h2>About me</h2>
+                    <p>My name is Chris Norman, and I am an aspiring software developer living in the south-east UK. I have a passion for technology with a desire to learn and to grow my programming skillset. My background in physics provides me with strong analytical skills and a creative, yet logical approach to problem-solving, enabling me to overcome any challenges I am faced with. I possess solid teamwork and communication skills picked up throughout my degree and during my extensive customer service experience, enabling me to work efficiently with colleagues and clients alike. I am extremely excited to begin my career in software and to continue to improve my technical skills alongside an organisation that will help guide me and facilitate my growth as a developer.</p>
+                </div>
+            </div>
+            <div class="about-section__buttons">
+                <button onclick="goToProjects()">Check Out My Work</button>
+                <button onclick="goToContact()">Get In Touch</button>
+                <button>View my CV</button>
+            </div>
+        </section>
+        
+        <img src="assets/fish-background.png" class="background-rhs">
+        <section id="projects">
+            <h2 class="project-section__title">Projects</h2>
+            <div class="project-section">
+                <section class="project-card">
+                    <img class="project-card__image" src="assets/octoplayer.png" alt="Octoplayer logo"/>
+                    <div class="project-card__icons">
+                        <div class="tech-icon">
+                            <img class="tech-icon__image" src="assets/c-sharp-logo.png">
+                            <p class="tech-icon__caption">C#</p>
+                        </div>
+                        <div class="tech-icon">
+                            <img class="tech-icon__image" src="assets/xaml-logo.png">
+                            <p class="tech-icon__caption">XAML</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <img src="assets/fish-background.png" class="background-rhs">
-        <div class="content">
-            <div class="section-title">
-                <h2>Projects</h2>
-            </div>
-            <div class="flex-container-responsive" id="projects">
-                <div class="flex-card card vertical-content">
-                    <img class="project-img" src="assets/octoplayer.png" alt="Octoplayer Logo" style="width: 100%;"/>
                     <h3>Octoplayer</h3>
-                    <p class="project-description">A dark theme fullscreen music player for browsing and playing tracks from an offline music library. Built using Microsoft's WPF framework, the player features sophisticated browser navigation and playing queue controls, presented with an elegant and intuitive User Interface. </p>
-                    <div class="flex-container-icons">
-                        <div class="tech-icon-container">
-                            <img class="tech-icon" src="assets/c-sharp-logo.png">
-                            <p>C#</p>
+                    <p class="project-card__description">A dark theme fullscreen music player for browsing and playing tracks from an offline music library. Built using Microsoft's WPF framework, the player features sophisticated browser navigation and playing queue controls, presented with an elegant and intuitive User Interface. </p>
+                    <a class="project-card__github-button" href="https://github.com/cmjnorman/Octoplayer">View On Github</a>
+                </section> 
+                <section class="project-card">
+                    <img class="project-card__image" src="assets/sparta-profile-viewer.png" alt="Sparta Global logo"/>
+                    <div class="project-card__icons">
+                        <div class="tech-icon">
+                            <img class="tech-icon__image" src="assets/c-sharp-logo.png">
+                            <p class="tech-icon__caption">C#</p>
                         </div>
-                        <div class="tech-icon-container">
-                            <img class="tech-icon" src="assets/xaml-logo.png">
-                            <p>XAML</p>
+                        <div class="tech-icon">
+                            <img class="tech-icon__image" src="assets/asp-net-logo.png">
+                            <p class="tech-icon__caption">ASP.NET</p>
                         </div>
-                        <a class="button-link" href="https://github.com/cmjnorman/Octoplayer">View On Github</a>
+                    </div>
+                    <h3>Sparta Global Profile Viewer</h3>
+                    <p class="project-card__description">An online portal system created with my training team at Sparta Global for our final project. The portal allows current Sparta trainees and consultants to log into their personal account to create, view, and update their personal profiles, and allows prospective Sparta clients to log in to a temporary client account in order to browse through a selection of profiles. </p>
+                    <a class="project-card__github-button" href="https://gist.github.com/cmjnorman/a5fce78eb1701adc322d73dedddbffa8">View On Github</a>
+                </section> 
+                <section class="project-card">
+                    <img class="project-card__image" src="assets/calculator-logo.png" alt="Screenshot of calculator app"/>
+                    <div class="project-card__icons">
+                        <div class="tech-icon">
+                            <img class="tech-icon__image" src="assets/html5-logo.png">
+                            <p class="tech-icon__caption">HTML 5</p>
+                        </div>
+                        <div class="tech-icon">
+                            <img class="tech-icon__image" src="assets/css3-logo.png">
+                            <p class="tech-icon__caption">CSS 3</p>
+                        </div>
+                        <div class="tech-icon">
+                            <img class="tech-icon__image" src="assets/js6-logo.png">
+                            <p class="tech-icon__caption">Javascript ES6</p>
+                        </div>
+                    </div>
+                    <h3>Javascript calculator</h3>
+                    <p class="project-card__description">A simple web calculator made with HTML, CSS and Javascript.</p>
+                    <div class="project-card__buttons">
+                        <a class="project-card__github-button" href="https://cmjnorman.github.io/calculator/">Live Demo</a>
+                        <a class="project-card__github-button" href="https://github.com/cmjnorman/calculator">View On Github</a>
+                        
                     </div>
                     
-                </div> 
-                <div class="flex-card card vertical-content">
-                    <img class="project-img" src="assets/sparta-profile-viewer.png" alt="Octoplayer Logo" style="width: 100%;"/>
-                    <h3>Sparta Global Profile Viewer</h3>
-                    <p class="project-description">An online portal system created with my training team at Sparta Global for our final project. The portal allows current Sparta trainees and consultants to log into their personal account to create, view, and update their personal profiles, and allows prospective Sparta clients to log in to a temporary client account in order to browse through a selection of profiles.</p>
-                    <div class="flex-container-icons">
-                        <div class="tech-icon-container">
-                            <img class="tech-icon" src="assets/c-sharp-logo.png">
-                            <p>C#</p>
-                        </div>
-                        <div class="tech-icon-container">
-                            <img class="tech-icon" src="assets/asp-net-logo.png">
-                            <p>ASP.NET</p>
-                        </div>
-                        <a class="button-link" href="https://gist.github.com/cmjnorman/a5fce78eb1701adc322d73dedddbffa8">View On Github</a>
-                    </div>
-                </div> 
+                </section> 
             </div>
-        </div>
+        </section>
         <img src="assets/squid-background.png" class="background-lhs">
-        <div class="content">
-            <h2 class="section-title">Contact</h2>
-            <div class="card horizontal-content-center" id="contact">
+        <section id="contact">
+            <h2 class="contact-section__title">Contact</h2>
+            <div class="contact-section">
                 <p>Contact me via email or phone:</p>
-                <div class="flex-container-contacts">
-                    <div class="horizontal-content">
+                <div class="contact-section__contact-info">
+                    <div>
                         <img class="email-icon" src="assets/email-icon.png">
                         <a href="mailto:cmjnorman@gmail.com">cmjnorman@gmail.com</a>
                     </div>
-                    <div class="horizontal-content">
+                    <div>
                         <img class="phone-icon" src="assets/phone-icon.png">
                         <p class="no-wrap">+44(0)-7939-482672</p>
                     </div>
@@ -95,13 +113,13 @@
                     <input type="text" name="name" required placeholder="Name...">
                     <input type="email" name="email" required placeholder="Email...">
                     <textarea name="message" required placeholder="Enter Message..."></textarea>
-                    <button type="submit">Send</button>
+                    <input type="submit" value="Send"></input>
                 </form>
             </div>
-        </div>
+        </section>
         <div class="footer">
-            <a class="github-link" href="https://github.com/cmjnorman/portfolio-website">Check out the GitHub repository for this site!</a>
-            <button onclick="goToTop()" class="btn-back-to-top">Back To Top</button>
+            <a class="footer__github-link" href="https://github.com/cmjnorman/portfolio-website">Check out the GitHub repository for this site!</a>
+            <button onclick="goToTop()" class="footer__top-button">Back To Top</button>
         </footer>
     </body>
     <script src="script.js"></script>
