@@ -185,7 +185,7 @@ input[type="submit"]:hover input:active {
         }
 
             .tech-icon__image {
-                height: 50px;
+                max-height: 2.5em;
                 margin: 0.5em;
                 transition: 0.3s;
             }
@@ -194,7 +194,7 @@ input[type="submit"]:hover input:active {
                     transform: translateY(-0.5em);
                 }
 
-            .tech-icon .tech-icon__caption {
+            .tech-icon__caption {
                 font-size: 0em;
                 white-space: nowrap;
                 opacity: 0;
@@ -264,6 +264,7 @@ input[type="submit"]:hover input:active {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
     }
 
         .contact-section__contact-info div {
@@ -296,14 +297,15 @@ input[type="submit"]:hover input:active {
 
     .footer__github-link {
         position: absolute;
-        font-size: 15px;
-        bottom: 10px;
-        left: 20px;
+        font-size: 1em;
+        bottom: 0.5em;
+        left: 1em;
+        white-space: nowrap;
     }
 
     .footer__top-button {
         position: absolute;
-        bottom: 30px;
+        bottom: 2em;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -337,11 +339,11 @@ input[type="submit"]:hover input:active {
         align-items: center;
     }
     .project-card {
-        max-width: 100%;
+        max-width: 29em;
     }
   }
 
-  @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
     * {
         font-size: 14px;
     }
@@ -353,6 +355,13 @@ input[type="submit"]:hover input:active {
         flex-direction: column;
     }
   }
+
+@media screen and (max-width: 500px) {
+    .footer__github-link {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
 
   @keyframes bounce {
     0% {
