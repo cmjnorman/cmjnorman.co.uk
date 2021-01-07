@@ -90,6 +90,28 @@ input[type="submit"]:hover input:active {
     color: var(--shadow-colour);
 }
 
+.social-icons {
+    position: fixed;
+    top: 0.5em;
+    right: 1em;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.--invisible {
+    opacity: 0;
+    scale: 0;
+}
+
+    .social-icon {
+        max-width: 2.5em;
+        width: 100%;
+        margin: 0 0.5em;
+        transition: 0.3s;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
 .header {
     height: 100vh;
     width: 100%;
@@ -103,6 +125,12 @@ input[type="submit"]:hover input:active {
         position: relative;
         top: 40%;
         transform: translateY(-50%);
+    }
+
+    .header__social-icons {
+        margin-top: 1em;
+        display: flex;
+        transition: 0.3s;
     }
 
     .header__scroll-icon {
@@ -145,6 +173,17 @@ input[type="submit"]:hover input:active {
         align-items: center;
         padding: 0.5em;
     }
+    .about-section a {
+        margin: 0.25em;
+        text-decoration: none;
+        width: 100%;
+        max-width: 12em;
+    }
+
+    .about-section a:hover {
+        color: var(--shadow-colour);
+    }
+    
 
 .background-rhs {
     width: 20em;

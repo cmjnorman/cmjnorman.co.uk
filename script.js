@@ -22,3 +22,24 @@ function goToContact() {
         inline: "center"
     });
 }
+
+function openCV() {
+    var cv = ""
+    window.open(pdf);
+}
+
+var title = document.getElementById("title");
+var pinnedIcons = document.getElementById("icons-pinned");
+var titleIcons = document.getElementById("icons-title");
+
+window.onscroll = function() {
+    if(title.getBoundingClientRect().top <= 0){
+        pinnedIcons.classList.add("--invisible");
+        titleIcons.classList.remove("--invisible");
+    }
+
+    if(title.getBoundingClientRect().bottom <= 0){
+        pinnedIcons.classList.remove("--invisible");
+        titleIcons.classList.add("--invisible");
+    }
+}

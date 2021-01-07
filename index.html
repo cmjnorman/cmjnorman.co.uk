@@ -8,10 +8,26 @@
         <title>Chris Norman</title>
     </head>
     <body>
+        <div class="social-icons --invisible" id="icons-pinned">
+            <a class="social-icon" href="https://github.com/cmjnorman">
+                <img src="assets/icons/github-icon.png">
+            </a>
+            <a class="social-icon" href="https://www.linkedin.com/in/christopher-norman-a0840219a/">
+                <img src="assets/icons/linkedin-icon.png">
+            </a>
+        </div>
         <div class="header">
-            <section class="header__title">
+            <section class="header__title" id="title">
                 <h1>Chris Norman</h1>
                 <h2>Software Developer</h2>
+                <div class="header__social-icons" id="icons-title">
+                    <a class="social-icon" href="https://github.com/cmjnorman">
+                        <img src="assets/icons/github-icon.png">
+                    </a>
+                    <a class="social-icon" href="https://www.linkedin.com/in/christopher-norman-a0840219a/">
+                        <img src="assets/icons/linkedin-icon.png">
+                    </a>
+                </div>
             </section>
             <img class="header__scroll-icon" onclick="goToAbout()" src="assets/icons/scroll-arrow-icon.png">
         </div>
@@ -26,7 +42,7 @@
             <div class="about-section__buttons">
                 <button onclick="goToProjects()">Check Out My Work</button>
                 <button onclick="goToContact()">Get In Touch</button>
-                <button>View my CV</button>
+                <a href="assets/pdfs/chris-norman-CV.pdf"><button>View my CV</button></a>
             </div>
         </section>
         
