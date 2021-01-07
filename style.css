@@ -58,6 +58,7 @@ button {
 
 button:hover, button:active{
     color: var(--shadow-colour);
+    transform: scale(105%);
 }
 
 input, textarea {
@@ -86,8 +87,9 @@ input[type="submit"] {
     margin-right: auto;
 }
 
-input[type="submit"]:hover input:active {
+input[type="submit"]:hover, input[type="submit"]:active {
     color: var(--shadow-colour);
+    transform: scale(105%);
 }
 
 .social-icons {
@@ -112,6 +114,10 @@ input[type="submit"]:hover input:active {
         text-decoration: none;
     }
 
+    .social-icon:hover img, .social-icon:active img {
+        transform: scale(105%);
+    }
+
 .header {
     height: 100vh;
     width: 100%;
@@ -129,7 +135,6 @@ input[type="submit"]:hover input:active {
 
     .header__social-icons {
         margin-top: 1em;
-        display: flex;
         transition: 0.3s;
     }
 
@@ -174,13 +179,18 @@ input[type="submit"]:hover input:active {
         padding: 0.5em;
     }
     .about-section a {
-        margin: 0.25em;
+        margin: 0.3em;
+        padding: 0;
         text-decoration: none;
         width: 100%;
         max-width: 12em;
     }
 
-    .about-section a:hover {
+    .about-section a button {
+        margin: 0;
+    }
+
+    .about-section a:hover, .about-section a:active  {
         color: var(--shadow-colour);
     }
     
@@ -275,6 +285,7 @@ input[type="submit"]:hover input:active {
 
             .project-card__button:hover, .project-card__button:active {
                 color: var(--shadow-colour);
+                transform: scale(105%);
             }
 
 .background-lhs {
@@ -345,8 +356,7 @@ input[type="submit"]:hover input:active {
     .footer__top-button {
         position: absolute;
         bottom: 2em;
-        left: 50%;
-        transform: translateX(-50%);
+        left: calc(50% - 5em);
     }
 
 
