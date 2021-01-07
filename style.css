@@ -216,11 +216,12 @@ input[type="submit"]:hover input:active {
 
         .project-card__buttons {
             width: 100%;
+            margin-top: auto;
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
         }
 
-            .project-card__github-button {
+            .project-card__button {
                 font-size: 1.2em;
                 text-align: center;
                 text-decoration: none;
@@ -228,15 +229,12 @@ input[type="submit"]:hover input:active {
                 border-radius: 1em;
                 padding: 0.25em;
                 margin: 0.25em;
-                margin-top: auto;
                 transition: 0.2s;
                 width: 100%;
                 max-width: 10em;
-                margin-left: auto;
-                margin-right: auto;
             }
 
-            .project-card__github-button:hover, .project-card__github-button:active {
+            .project-card__button:hover, .project-card__button:active {
                 color: var(--shadow-colour);
             }
 
@@ -346,6 +344,10 @@ input[type="submit"]:hover input:active {
   @media screen and (max-width: 800px) {
     * {
         font-size: 14px;
+    }
+    section {
+        margin: 0 2em;
+        width: calc(100% - 4em);
     }
     .about-section__buttons {
         flex-direction: column;
