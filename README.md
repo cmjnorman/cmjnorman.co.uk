@@ -1,3 +1,2 @@
-# portfolio-website
+# [cmjnorman.co.uk](http://www.cmjnorman.co.uk/)
 
-## A website to display my coding portfolio
