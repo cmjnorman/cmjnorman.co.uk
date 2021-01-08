@@ -426,11 +426,11 @@ input[type="submit"] {
         color: var(--shadow-colour);
     }
 
-    .tech-icon:focus .tech-icon__image {
+    .tech-icon:hover .tech-icon__image {
         transform: translateY(-0.5em);
     }
     
-    .tech-icon:focus .tech-icon__caption {
+    .tech-icon:hover .tech-icon__caption {
         font-size: 0.8em;
         opacity: 100%;
     }
