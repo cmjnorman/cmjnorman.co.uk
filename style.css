@@ -5,14 +5,13 @@
     --shadow-colour: #323c41ff;
   }
 
-html {
-    scroll-behavior: smooth;
-}
-
 * {
     margin: 0;
     padding: 0;
     border: 0;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
     box-sizing: border-box;
     outline: none;
     position: relative;
@@ -56,11 +55,6 @@ button {
     max-width: 10em;
 }
 
-button:hover, button:active{
-    color: var(--shadow-colour);
-    transform: scale(105%);
-}
-
 input, textarea {
     background-color: transparent;
     border: 1px solid var(--shadow-colour);
@@ -87,11 +81,6 @@ input[type="submit"] {
     margin-right: auto;
 }
 
-input[type="submit"]:hover, input[type="submit"]:active {
-    color: var(--shadow-colour);
-    transform: scale(105%);
-}
-
 .social-icons {
     position: fixed;
     top: 0.5em;
@@ -112,10 +101,6 @@ input[type="submit"]:hover, input[type="submit"]:active {
         transition: 0.3s;
         cursor: pointer;
         text-decoration: none;
-    }
-
-    .social-icon:hover img, .social-icon:active img {
-        transform: scale(105%);
     }
 
 .header {
@@ -188,12 +173,7 @@ input[type="submit"]:hover, input[type="submit"]:active {
 
     .about-section a button {
         margin: 0;
-    }
-
-    .about-section a:hover, .about-section a:active  {
-        color: var(--shadow-colour);
-    }
-    
+    } 
 
 .background-rhs {
     width: 20em;
@@ -239,10 +219,6 @@ input[type="submit"]:hover, input[type="submit"]:active {
                 transition: 0.3s;
             }
 
-                .tech-icon:hover .tech-icon__image, .tech-icon:active .tech-icon__image {
-                    transform: translateY(-0.5em);
-                }
-
             .tech-icon__caption {
                 font-size: 0em;
                 white-space: nowrap;
@@ -253,11 +229,6 @@ input[type="submit"]:hover, input[type="submit"]:active {
                 bottom: 0em;
                 transform: translateX(-50%);
             }
-
-                .tech-icon:hover .tech-icon__caption, .tech-icon:active .tech-icon__caption {
-                    font-size: 0.8em;
-                    opacity: 100%;
-                }
 
         .project-card__description {
             margin-bottom: 1em;
@@ -281,11 +252,6 @@ input[type="submit"]:hover, input[type="submit"]:active {
                 transition: 0.2s;
                 width: 100%;
                 max-width: 10em;
-            }
-
-            .project-card__button:hover, .project-card__button:active {
-                color: var(--shadow-colour);
-                transform: scale(105%);
             }
 
 .background-lhs {
@@ -390,7 +356,7 @@ input[type="submit"]:hover, input[type="submit"]:active {
     .project-card {
         max-width: 29em;
     }
-  }
+}
 
 @media screen and (max-width: 800px) {
     * {
@@ -403,7 +369,77 @@ input[type="submit"]:hover, input[type="submit"]:active {
     .about-section__buttons {
         flex-direction: column;
     }
-  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+    button:hover{
+        color: var(--shadow-colour);
+        transform: scale(105%);
+    }
+
+    input[type="submit"]:hover {
+        color: var(--shadow-colour);
+        transform: scale(105%);
+    }
+
+    .social-icon:hover img {
+        transform: scale(105%);
+    }
+
+    .about-section a:hover {
+        color: var(--shadow-colour);
+    }
+
+    .tech-icon:hover .tech-icon__image {
+        transform: translateY(-0.5em);
+    }
+    
+    .tech-icon:hover .tech-icon__caption {
+        font-size: 0.8em;
+        opacity: 100%;
+    }
+
+    .project-card__button:hover {
+        color: var(--shadow-colour);
+        transform: scale(105%);
+    }
+}
+
+@media (hover: none) and (pointer: coarse) {
+    
+    button:active {
+        color: var(--shadow-colour);
+        transform: scale(105%);
+    }
+
+    input[type="submit"]:active {
+        color: var(--shadow-colour);
+        transform: scale(105%);
+    }
+
+    .social-icon:active img {
+        transform: scale(105%);
+    }
+
+    .about-section a:active {
+        color: var(--shadow-colour);
+    }
+
+    .tech-icon:active .tech-icon__image {
+        transform: translateY(-0.5em);
+    }
+    
+    .tech-icon:active .tech-icon__caption {
+        font-size: 0.8em;
+        opacity: 100%;
+    }
+
+    .project-card__button:active {
+        color: var(--shadow-colour);
+        transform: scale(105%);
+    }
+}
 
 @media screen and (max-width: 500px) {
     .footer__github-link {

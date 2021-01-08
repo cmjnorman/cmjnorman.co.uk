@@ -5,19 +5,21 @@ function goToTop() {
 
 function goToAbout() {
     document.getElementById("about").scrollIntoView({
-        behavior: "auto",
+        behavior: "smooth",
         block: "center",
         inline: "center"
     });
 }
 
 function goToProjects() {
-    document.getElementById("projects").scrollIntoView();
+    document.getElementById("projects").scrollIntoView({
+        behavior: "smooth"
+    });
 }
 
 function goToContact() {
     document.getElementById("contact").scrollIntoView({
-        behavior: "auto",
+        behavior: "smooth",
         block: "center",
         inline: "center"
     });
@@ -43,3 +45,4 @@ window.onscroll = function() {
         titleIcons.classList.add("--invisible");
     }
 }
+
